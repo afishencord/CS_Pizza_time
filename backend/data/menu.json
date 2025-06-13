@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "name": "Margherita",
+      "toppings": ["tomato sauce","mozzarella","basil"],
+      "price": 12.00,
+      "image": "/images/margherita.jpg",
+      "discount": 0
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni",
+      "toppings": ["tomato sauce","mozzarella","pepperoni"],
+      "price": 14.00,
+      "image": "/images/pepperoni.jpg",
+      "discount": 0
+    },
+    {
+      "id": 3,
+      "name": "Veggie",
+      "toppings": ["tomato sauce","mozzarella","peppers","onions","olives"],
+      "price": 13.50,
+      "image": "/images/veggie.jpg",
+      "discount": 0
+    },
+    {
+      "id": 4,
+      "name": "BBQ Chicken",
+      "toppings": ["BBQ sauce","mozzarella","grilled chicken","red onion"],
+      "price": 15.00,
+      "image": "/images/bbq-chicken.jpg",
+      "discount": 0
+    },
+    {
+      "id": "custom",
+      "name": "Custom Pizza",
+      "basePrice": 10.00,
+      "availableToppings": ["pepperoni","mushrooms","onions","..."],
+      "image": "/images/custom.jpg",
+      "discount": 0
+    },
+    {
+      "id": 5,
+      "name": "Bread Sticks",
+      "price": 5.00,
+      "image": "/images/bread-sticks.jpg",
+      "discount": 0
+    },
+    {
+      "id": 6,
+      "name": "Wings (10-count)",
+      "price": 9.00,
+      "image": "/images/wings10.jpg",
+      "discount": 0
+    },
+    {
+      "id": 7,
+      "name": "Wings (20-count)",
+      "price": 16.00,
+      "image": "/images/wings20.jpg",
+      "discount": 0
+    },
+    {
+      "id": 8,
+      "name": "Coke",
+      "price": 2.00,
+      "image": "/images/coke.jpg",
+      "discount": 0
+    },
+    {
+      "id": 9,
+      "name": "Sprite",
+      "price": 2.00,
+      "image": "/images/sprite.jpg",
+      "discount": 0
+    },
+    {
+      "id": 10,
+      "name": "Ginger Ale",
+      "price": 2.00,
+      "image": "/images/ginger-ale.jpg",
+      "discount": 0
+    }
+  ]
+  
