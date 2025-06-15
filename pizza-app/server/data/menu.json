@@ -1,0 +1,28 @@
+[
+  { "id": 1, "name": "Margherita",       "description": "Tomato, mozzarella, basil",       "price": 10, "image": "pizza1.jpg", "category": "pizza" },
+  { "id": 2, "name": "Pepperoni",        "description": "Pepperoni & cheese",               "price": 12, "image": "pizza2.jpg", "category": "pizza" },
+  { "id": 3, "name": "Hawaiian",         "description": "Ham, pineapple & cheese",          "price": 11, "image": "pizza3.jpg", "category": "pizza" },
+  { "id": 4, "name": "Veggie Delight",   "description": "Peppers, onions, mushrooms",       "price": 11, "image": "pizza4.jpg", "category": "pizza" },
+  { "id": 5, "name": "Meat Lovers",      "description": "Sausage, ham, pepperoni, bacon",   "price": 13, "image": "pizza5.jpg", "category": "pizza" },
+  { "id": 6, "name": "BBQ Chicken",      "description": "BBQ sauce, chicken, onions",       "price": 12, "image": "pizza6.jpg", "category": "pizza" },
+  {
+    "id": 7,
+    "name": "Custom Pizza",
+    "description": "Build your own pizza",
+    "price": 8,
+    "image": "custom.jpg",
+    "category": "pizza",
+    "options": {
+      "crust":     ["Thin", "Regular", "Deep Dish"],
+      "sauce":     ["Tomato", "Pesto", "Barbecue"],
+      "toppings":  ["Pepperoni", "Mushrooms", "Onions", "Olives", "Green Peppers", "Extra Cheese"]
+    }
+  },
+  { "id": 8,  "name": "Coke",            "description": "12oz bottle",                     "price": 2,  "image": "drink1.jpg",  "category": "drink" },
+  { "id": 9,  "name": "Sprite",          "description": "12oz bottle",                     "price": 2,  "image": "drink2.jpg",  "category": "drink" },
+  { "id": 10, "name": "Iced Tea",        "description": "12oz bottle",                     "price": 2,  "image": "drink3.jpg",  "category": "drink" },
+  { "id": 11, "name": "Lemonade",        "description": "12oz bottle",                     "price": 2,  "image": "drink4.jpg",  "category": "drink" },
+  { "id": 12, "name": "Bread Sticks",    "description": "6 sticks with marinara",         "price": 5,  "image": "breadsticks.jpg", "category": "side" },
+  { "id": 13, "name": "Wings",           "description": "8 chicken wings",                 "price": 7,  "image": "wings.jpg",    "category": "side" },
+  { "id": 14, "name": "Brownie",         "description": "Chocolate brownie",               "price": 3,  "image": "brownie.jpg",  "category": "side" }
+]
