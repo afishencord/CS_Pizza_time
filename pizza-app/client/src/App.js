@@ -9,18 +9,30 @@ function App() {
   const [menu, setMenu] = useState([]);
   const [cart, setCart] = useState([]);
   const [customizing, setCustomizing] = useState(null);
+  const [checkingOut, setCheckingOut] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/menu')
-         .then(res => setMenu(res.data));
+    axios.get('/api/menu')
+         .then(res => setMenu(res.data))
+         .catch(console.error);
   }, []);
 
   const addToCart = item => setCart(prev => [...prev, item]);
-  const removeFromCart = index => setCart(prev => prev.filter((_, i) => i !== index));
+  const removeFromCart = idx => setCart(prev => prev.filter((_, i) => i !== idx));
+
+  if (checkingOut) {
+    return (
+      <Checkout
+        cart={cart}
+        onCancel={() => setCheckingOut(false)}
+      />
+    );
+  }
 
   return (
     <div className="container">
       <h1>PizzaTime</h1>
+
       {!customizing && (
         <Menu
           items={menu}
@@ -28,6 +40,7 @@ function App() {
           onCustomize={pizza => setCustomizing(pizza)}
         />
       )}
+
       {customizing && (
         <PizzaBuilder
           pizza={customizing}
@@ -35,9 +48,27 @@ function App() {
           onCancel={() => setCustomizing(null)}
         />
       )}
+
       <Cart cart={cart} onRemove={removeFromCart} />
-      <Checkout cart={cart} />
+
+      {cart.length > 0 && (
+        <button
+          onClick={() => setCheckingOut(true)}
+          style={{
+            backgroundColor: 'green',
+            color: 'white',
+            border: 'none',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            marginTop: '12px'
+          }}
+        >
+          Checkout
+        </button>
+      )}
     </div>
   );
 }
+
 export default App;
