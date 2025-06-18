@@ -16,6 +16,7 @@ function App() {
   }, []);
 
   const addToCart = item => setCart(prev => [...prev, item]);
+  const removeFromCart = index => setCart(prev => prev.filter((_, i) => i !== index));
 
   return (
     <div className="container">
@@ -34,7 +35,7 @@ function App() {
           onCancel={() => setCustomizing(null)}
         />
       )}
-      <Cart cart={cart} />
+      <Cart cart={cart} onRemove={removeFromCart} />
       <Checkout cart={cart} />
     </div>
   );

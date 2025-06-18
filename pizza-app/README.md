@@ -11,6 +11,7 @@
    
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+
 ## Setup on Windows 11
 1. Open PowerShell or Command Prompt on vscode.
 2. Clone the repository:
